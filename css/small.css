@@ -1,0 +1,135 @@
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.NavFiller{
+    width: 100%;
+    height: 70px;
+}
+
+header{
+    height: 900px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: larger;
+    text-shadow: rgba(0,0,0,0.2) 0px 2px;
+
+}
+
+.Navigation{
+
+    position: fixed;
+
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0px 5px 10px 10px rgba(0,0,0, 0.2);
+
+}
+
+.Navigation > ul > li{
+    list-style: none;
+}
+
+header{
+    background-color: lightgreen;
+}
+
+main{
+    background-color: red;
+}
+
+.game{
+    background-color: red;
+}
+
+.GameShowcase{
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.GameCard{
+
+    display: flex;
+    align-items: center;
+
+    height: 500px;
+    padding: 5% 10% 5% 10%;
+    
+    border-top: 0.5px solid rgba(255, 255, 255, 0.9);
+    justify-content: space-evenly;
+
+    background-image: url("../assets/grassland_bg.png");
+    background-size: cover;
+
+}
+
+.GameCardContent{
+
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    
+    justify-content: space-evenly;
+
+    padding: 10px;
+
+}
+
+.GameArt{
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.3);
+    margin: 1em;
+
+}
+
+.GameArt> a {
+    display: flex;
+    align-items: center;
+}
+
+.GameArt > a > img{
+
+    width: 100%;
+    height: auto;
+
+}
+
+.GameDesc{
+
+    width: 100%;
+    height: auto;
+    
+
+    background-color:rgba(0, 0, 0, 0.4);
+    font-size: large;
+    color: white;
+
+    border-radius: 2px;
+    box-shadow: 0px 5px rgba(0,0,0,0.4);
+
+    margin: 1em;
+    padding: 1em;
+
+}
+
+hr{
+    border: 5px solid rgba(255, 255, 255, 1);
+}
