@@ -26,7 +26,6 @@ header{
     align-items: center;
     justify-content: space-evenly;
 
-    font-family: "Lato-Medium", Arial;
     font-weight: normal;
     font-style: normal;
     color: #ffffff;
@@ -38,7 +37,7 @@ header{
 }
 
 .Navigation{
-
+    
     position: fixed;
 
     background-color: rgba(255, 255, 255, 1);
@@ -46,6 +45,7 @@ header{
     height: 90px;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
@@ -55,33 +55,50 @@ header{
 
 .Navigation > ul {
 
+    margin: 0;
+    padding: 0;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     align-items: center;
-    justify-self: flex-end;
-    
-
-}
-
-.Navigation > ul > li{
+    justify-self: space-around;
     list-style: none;
-    padding-right: 1em;
+
+    width: 100%;
+
+}
+
+.NavItem{
+    
+    padding: 10px;
+
+    background-color: white;
+    width: 100%;
+
+    text-align: center;
+    
     
 }
 
-#icon{
+.HamburgerBtn{
 
-    padding-right: 0;
+    background-color: white;
+    width: 100%;
+
+    border: none;
+    padding: 1em;
+
+    text-align: center;
 
 }
 
-#icon > img {
-    transition: width 0.5s, height 0.5s;
+.HamburgerBtn:hover{
+    background-color: rgb(221, 221, 221);
 }
 
-#icon > img:hover {
-    width: 120%;
+.HamburgerBtn:active{
+    background-color: rgb(209, 209, 209);
 }
 
 .Navigation > ul> li > a{
@@ -160,7 +177,7 @@ main{
 
 }
 
-.GameArt> a {
+.GameArt > a {
     display: flex;
     align-items: center;
 }
@@ -192,4 +209,12 @@ main{
 
 hr{
     border: 5px solid rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+.hide{
+    display: none;
 }
