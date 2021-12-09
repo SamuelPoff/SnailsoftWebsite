@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css" />
+
+    <link rel="stylesheet" href="./css/small-formpage.css" />
+
+    <title>Snailsoft | Contact Us</title>
+</head>
+<body>
+    
+    <div class="NavFiller"></div>
+
+        <nav class="Navigation">
+
+            <a class="NavIcon" href="index.html"><img src="assets/snailsoft_desktop_logo.png" width=250px height=70px></a>
+
+            <button id="hamburger-btn" class="HamburgerBtn"><img src="assets/collection-icon.svg"></button>
+
+            <ul id="nav-menu">
+                <li class="NavItem"><a href="contact-us.html">Contact Us</a></li>
+                <li class="NavItem"><a href="index.html">Report Bug</a><li>
+            </ul>
+
+        </nav>
+
+        <div class="SideMargins">
+
+        <main>
+
+            <h1>Contact Us</h1>
+            <form>
+                <fieldset>
+                    <label class="FormItem" for="first-name">
+                        First Name
+                        <input class="TextbasedInput" id="first-name" type="text" placeholder="First Name">
+                    </label>
+                    <label class="FormItem" for="last-name">
+                        Last Name
+                        <input class="TextbasedInput" id="last-name" type="text" placeholder="Last Name">
+                    </label>
+                    <label class="FormItem" for="email">
+                        Email
+                        <input class="TextbasedInput" id="email" type="email" placeholder="Example@gmail.com"/>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <label class="FormItem">
+                        Subject
+                        <input class="TextbasedInput" id="subject" type="text" placeholder="Subject">
+                    </label>
+                    <label class="FormItem">
+                        Content
+                        <textarea placeholder="Whatever you wanna say!"></textarea>
+                    </label>
+                    
+                    <input class="FormItem" id="submit" type="submit" value="Send Your Comment">
+                    
+                </fieldset>
+
+
+
+            </form>
+
+        </main>
+
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+
+    </div>  
+
+    <script src="javascript/snailsoft.js"></script>
+
+</body>
+</html>
