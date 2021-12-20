@@ -29,8 +29,9 @@ header{
     font-weight: normal;
     font-style: normal;
     color: #ffffff;
-    background-color: lightgreen;
-
+    background-image: url("../assets/FillerSnailHeroImage.jpg");
+    background-size: cover;
+    background-position: 50%;
 
     text-shadow: rgba(0,0,0,0.2) 0px 2px;
 
@@ -216,4 +217,46 @@ hr{
 
 .hide{
     display: none;
+}
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 3em 7em;
+
+    background-color: white;
+    color: black;
+}
+
+.FooterInfo{
+    line-height: 2px;
+}
+
+.SocialMediaLinks{
+
+    display: flex;
+    flex-direction: row;
+
+    width: 30%;
+
+    justify-content: space-around;
+    align-items: center;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+
+}
+
+.SocialMediaIcon{
+
+    width: 3em;
+    height: 3em;
+
+    padding: 1em;
+
 }
