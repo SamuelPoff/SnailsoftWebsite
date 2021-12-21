@@ -1,0 +1,42 @@
+@media only screen and (min-width: 600px){
+
+    @font-face{
+        font-family: "Lato-Medium";
+        src: url("../fonts/Lato-Medium.eot");
+        src: url("../fonts/Lato-Medium.woff") format("woff");
+    }
+    
+    * {
+        font-family: "Lato-Medium", Arial;
+    }
+
+    main{
+        
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    .ContactUsHeader{
+        border:none;
+    }
+
+    form{
+        margin-top: 20px;
+
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+
+        border-bottom: 1px solid rgba(0,0,0, 0.3);
+    }
+
+}
+

@@ -10,25 +10,26 @@
     <link rel="stylesheet" href="./css/large.css" />
 
     <link rel="stylesheet" href="./css/small-formpage.css" />
+    <link rel="stylesheet" href="./css/medium-formpage.css" />
 
     <title>Snailsoft | Contact Us</title>
 </head>
 <body>
-    
+
+    <nav class="Navigation">
+
+        <a class="NavIcon" href="index.html"><img src="assets/snailsoft_desktop_logo.png" width=250px height=70px></a>
+
+        <button id="hamburger-btn" class="HamburgerBtn"><img src="assets/collection-icon.svg"></button>
+
+        <ul id="nav-menu">
+            <li class="NavItem"><a href="contact-us.html">Contact Us</a></li>
+            <li class="NavItem"><a href="index.html">Report Bug</a><li>
+        </ul>
+
+    </nav>
+
     <div class="NavFiller"></div>
-
-        <nav class="Navigation">
-
-            <a class="NavIcon" href="index.html"><img src="assets/snailsoft_desktop_logo.png" width=250px height=70px></a>
-
-            <button id="hamburger-btn" class="HamburgerBtn"><img src="assets/collection-icon.svg"></button>
-
-            <ul id="nav-menu">
-                <li class="NavItem"><a href="contact-us.html">Contact Us</a></li>
-                <li class="NavItem"><a href="index.html">Report Bug</a><li>
-            </ul>
-
-        </nav>
 
         <main>
 
@@ -54,10 +55,6 @@
                 </fieldset>
                 
                 <fieldset>
-                    <label class="FormItem">
-                        Subject
-                        <input class="TextbasedInput" id="subject" type="text" placeholder="Subject">
-                    </label>
                     <label class="FormItem">
                         Content
                         <textarea placeholder="Whatever you wanna say!"></textarea>

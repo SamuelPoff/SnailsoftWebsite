@@ -1,0 +1,32 @@
+.GameHeaderImage{
+
+    background-image: url("../assets/slug_soldier.png");
+    background-size: cover;
+    background-position: 50%;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.AboutGame{
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.AboutGameImg{
+
+    width: 50%;
+    height: auto;
+
+}

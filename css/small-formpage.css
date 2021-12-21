@@ -19,7 +19,7 @@ main{
     background-color: white;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     
@@ -40,6 +40,8 @@ main{
 
     padding: 5em;
 
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+
 }
 
 form{
@@ -51,10 +53,11 @@ form{
     align-items: flex-start;
     justify-content: space-around;
 
-    flex-basis: 50%;
+    flex-basis: 100%;
+    width: 80%;
+    padding: 3em;
 
     border-radius: 5px;
-    padding: 3em;
 
 }
 
