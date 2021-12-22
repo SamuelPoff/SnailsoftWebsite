@@ -4,23 +4,16 @@ const menu = document.getElementById("nav-menu");
 const navMenuItems = document.getElementsByClassName("NavItem");
 
 const navMenuHeight = CalcMenuChildrenHeight();
-
-function ToggleNavMenu(){
-    for(var i = 0;i < navMenuItems.length; i++){
-        navMenuItems[i].classList.toggle("hide");
-    }
-}
+let previousWidth = 0;
 
 hamburgerBtn.addEventListener("click", function(){
 
-    //ToggleNavMenu();
-
     //Toggles maxHeight value on the Navigation Menu for animation purposes
     if(menu.style.maxHeight == '0px'){
-        console.log("TOGGLING ON");
+        //Toggles menu on
         menu.style.maxHeight = navMenuHeight.toString(10) + "px";
     }else{
-        console.log("TOGGLING OFF");
+        //Toggles menu off
         menu.style.maxHeight = 0;
     }
     
@@ -40,26 +33,34 @@ function CalcMenuChildrenHeight(){
 
 }
 
-function ElementsHidden(){
-    return (navMenuItems[0].classList.contains("hide"));
-}
-
-
+//Doing this check on resize is bad for performance, fine in the short-term
+//but find an alternative solution that maybe only triggers an event when the window size crosses
+//some exclusive width so it doesnt have to be checked every time
 window.addEventListener("resize", function(event){
 
-    if( menu.style.maxHeight == "0px" ){
+    let width = document.documentElement.clientWidth;
+    let height = document.documentElement.clientHeight;
 
-        let width = document.documentElement.clientWidth;
-        let height = document.documentElement.clientHeight;
+    if( menu.style.maxHeight == "0px" ){
 
         if(width >= 600){
             
             //Hidden menu elements need to be revealed again
             menu.style.maxHeight = navMenuHeight.toString(10) + "px";
-    
+            
+        }
+
+    }else{
+
+        //If window is moved from big to small, now the nav doesnt start out opened
+        //NOTE
+        //It does have to animate closing upon doing this which isnt ideal so find a fix eventually.
+        if(previousWidth > 600 && width <= 600){
+            menu.style.maxHeight = 0;
         }
 
     }
     
+    previousWidth = width;
 
 });

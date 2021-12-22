@@ -17,6 +17,11 @@
     
     }
 
+    .TextbasedInput{
+
+        height: 30px;
+    }
+
     .ContactUsHeader{
         border:none;
     }

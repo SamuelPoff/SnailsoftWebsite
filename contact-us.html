@@ -35,30 +35,42 @@
 
             <section class="ContactUsHeader">
                 <h1>Contact Us</h1>
-                <h3>Tell us a little bit about your project.</h3>
+                <h3>Tell us about what's on your mind.</h3>
             </section>
 
-            <form>
+            <form onsubmit="return validateForm()">
                 <fieldset>
                     <label class="FormItem" for="first-name">
                         First Name
                         <input class="TextbasedInput" id="first-name" type="text" placeholder="First Name">
+                        <div class="ErrorMessage Hidden" id="first-name-error-container">
+                            <p id="first-name-error">Error message</p>
+                        </div>
                     </label>
                     <label class="FormItem" for="last-name">
                         Last Name
                         <input class="TextbasedInput" id="last-name" type="text" placeholder="Last Name">
+                        <div class="ErrorMessage Hidden" id="last-name-error-container">
+                            <p id="last-name-error">Error message</p>
+                        </div>
                     </label>
                     <label class="FormItem" for="email">
                         Email
                         <input class="TextbasedInput" id="email" type="email" placeholder="Example@gmail.com"/>
                     </label>
+                    <div class="ErrorMessage Hidden" id="email-error-container">
+                        <p id="email-error">Error message</p>
+                    </div>
                 </fieldset>
                 
                 <fieldset>
                     <label class="FormItem">
                         Content
-                        <textarea placeholder="Whatever you wanna say!"></textarea>
+                        <textarea id="message" placeholder="Whatever you wanna say!"></textarea>
                     </label>
+                    <div class="ErrorMessage Hidden" id="message-error-container">
+                        <p id="message-error">Error message</p>
+                    </div>
                     
                     <input class="FormItem" id="submit" type="submit" value="Send Your Comment">
                     
@@ -83,6 +95,7 @@
         </footer>
 
     <script src="javascript/snailsoft.js"></script>
+    <script src="javascript/contact-us.js"></script>
 
 </body>
 </html>
