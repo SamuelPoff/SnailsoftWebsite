@@ -17,7 +17,8 @@ let validationError = {
     InvalidTextError: 1,
     InvalidEmailError: 2,
 
-    EmptyMessageError: 3
+    EmptyMessageError: 3,
+    NoSelectionError: 4
 
 };
 
@@ -27,11 +28,12 @@ let InvalidTextErrorMessage = "This text field contains invalid characters (Only
 let InvalidEmailErrorMessage = "Email is not formatted correctly";
 let EmptyMessageErrorMessage = "Didnt you want to tell us something? :D";
 
+let NoSelectionErrorMessage = "Please make a selection";
+
 function validateForm(){
     
     let allFieldsValid = true;
 
-    //Validate Name fields
     //First name
     let firstNameValid = validateName(firstNameInput.value);
     if(firstNameValid != validationError.Valid){
@@ -126,6 +128,9 @@ function UpdateErrorMessage(element, error){
             break;
         case validationError.EmptyMessageError:
             element.innerHTML = EmptyMessageErrorMessage;
+            break;
+        case validationError.NoSelectionError:
+            element.innerHTML = NoSelectionErrorMessage;
             break;
     }
 }

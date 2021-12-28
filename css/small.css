@@ -35,7 +35,7 @@ header{
 }
 
 .HomeHeroImage{
-    background-image: url("../assets/FillerSnailHeroImage.jpg");
+    background-image: url("../assets/snailsoft_banner.jpg");
     background-size: cover;
     background-position: 50%;
 }
@@ -152,9 +152,23 @@ header{
     border-top: 0.5px solid rgba(255, 255, 255, 0.9);
     justify-content: space-evenly;
 
+    
+
+}
+
+#ShellshockedCard{
     background-image: url("../assets/grassland_bg.png");
     background-size: cover;
+}
 
+#EyeCard{
+    background-image: url("../assets/eye_banner_art.jpg");
+    background-size: cover;
+}
+
+#CatseroidsCard{
+    background-image: url("../assets/catseroids_banner_art.jpg");
+    background-size: cover;
 }
 
 .GameCardContent{

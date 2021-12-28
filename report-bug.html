@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="css/small-formpage.css">
+    <link rel="stylesheet" href="css/medium-formpage.css">
+    
+
+    <title>Snailsoft | Report Bug</title>
+</head>
+<body>
+    
+    <nav class="Navigation">
+
+        <a class="NavIcon" href="index.html"><img src="assets/snailsoft_desktop_logo.png" width=250px height=70px></a>
+
+        <button id="hamburger-btn" class="HamburgerBtn"><img src="assets/collection-icon.svg"></button>
+
+        <ul id="nav-menu">
+            <li class="NavItem"><a href="contact-us.html">Contact Us</a></li>
+            <li class="NavItem"><a href="report-bug.html">Report Bug</a><li>
+        </ul>
+
+    </nav>
+
+    <div class="NavFiller"></div>
+
+    <main>
+
+        <section class="ContactUsHeader">
+            <h1>Report a Bug</h1>
+            <h3>Things don't always work as expected...</h3>
+        </section>
+
+        <form onsubmit="return validateReportBugForm()">
+            <fieldset>
+                <label class="FormItem" for="GameSelect">
+                    Game
+                    <select id="GameSelect">
+                        <option value="no-game">Select a Game</option>
+                        <option value="Shellshock">Shellshock</option>
+                        <option value="Eye">Eye</option>
+                        <option value="Catseroids">Catseroids</option>
+                    </select>
+                    <div class="ErrorMessage Hidden" id="gameselect-error-container">
+                        <p id="gameselect-error">Error message</p>
+                    </div>
+                </label>
+
+                <label class="FormItem" for="first-name">
+                    Bug Description
+                    <textarea id="bug-description" placeholder="Bug description"></textarea>
+                    <div class="ErrorMessage Hidden" id="bug-description-error-container">
+                        <p id="bug-description-error">Error message</p>
+                    </div>
+                </label>
+
+                <label class="FormItem" for="screenshot">
+                    Bug Screenshot (optional)
+                    <input type="file" id="screenshot" accept=".jpg, .jpeg, .png">
+                </label>
+
+                <br>
+                <input id="submit" type="submit" value="Report Bug">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="FooterInfo">
+            <h1>Snailsoft</h1>
+            <h4>&copy;2020 SnailCorp.</h4>
+        </div>
+        <div class="SocialMediaLinks">
+            <a href="index.html"><img class="SocialMediaIcon" src="assets/facebook_bw_icon.svg"></a>
+            <a href="index.html"><img class="SocialMediaIcon" src="assets/twitter_bw_icon.svg"></a>
+            <a href="index.html"><img class="SocialMediaIcon" src="assets/pintrist_bw_icon.svg"></a>
+            <a href="index.html"><img class="SocialMediaIcon" src="assets/reddit_bw_icon.svg"></a>
+            <a href="index.html"><img class="SocialMediaIcon" src="assets/instagram_bw_icon.svg"></a>
+        </div>
+    </footer>
+
+    <script src="javascript/snailsoft.js"></script>
+    <script src="javascript/contact-us.js"></script>
+    <script src="javascript/report-bug.js"></script>
+
+</body>
+</html>
