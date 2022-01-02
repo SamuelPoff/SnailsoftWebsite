@@ -42,6 +42,11 @@
         
     }
 
+    .HomeHeroImage{
+        background-image: url("../assets/snailsoft_banner.jpg");
+        background-size: cover;
+        background-position: 50%;
+    }
 
     .GameCardContent{
 

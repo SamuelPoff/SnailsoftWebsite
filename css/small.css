@@ -35,7 +35,7 @@ header{
 }
 
 .HomeHeroImage{
-    background-image: url("../assets/snailsoft_banner.jpg");
+    background-image: url("../assets/snailsoft_banner_small.jpg");
     background-size: cover;
     background-position: 50%;
 }
