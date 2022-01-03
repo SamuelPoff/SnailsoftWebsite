@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 660px){
 
     
     .Navigation{
@@ -42,8 +42,11 @@
         
     }
 
+    header{
+        color: black;
+    }
     .HomeHeroImage{
-        background-image: url("../assets/snailsoft_banner.jpg");
+        background-image: url("../assets/snailsoft_tablet_banner.jpg");
         background-size: cover;
         background-position: 50%;
     }

@@ -1,7 +1,12 @@
-@media only screen and (min-width: 4000px){
+@media only screen and (min-width: 1024px){
 
-
-
-
+    header{
+        color: white;
+    }
+    .HomeHeroImage{
+        background-image: url("../assets/snailsoft_banner.jpg");
+        background-size: cover;
+        background-position: 50%;
+    }
 
 }

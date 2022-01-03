@@ -1,10 +1,11 @@
 .GameHeaderImage{
 
-    background-image: url("../assets/slug_soldier.png");
+    background-image: url("../assets/filler_game_image.jpg");
     background-size: cover;
     background-position: 50%;
 
     border-bottom: 1px solid rgba(0,0,0,0.2);
+    color: white;
 
 }
 
@@ -83,4 +84,9 @@ main{
     border-bottom: none;
     align-self: center;
 
+}
+
+#GameScreenshotsTitle{
+    color: white;
+    text-align: center;
 }
